@@ -1,0 +1,43 @@
+body{
+    background-color: #f0eef9;
+    color: #1b1e58;
+    width: 40%;
+    min-width: 400px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    background-color: #dcd3e7;
+    padding: 10px;
+    border-radius: 1cap;
+}
+
+fieldset {
+    border: none;
+}
+
+form, input{
+    border: #5255a4 2px solid;
+}
+
+label, input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input {
+    background-color: #a0a3f2;
+    font-size: 16px;
+    border-radius: 0.5cap;
+}
+
