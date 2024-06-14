@@ -45,3 +45,18 @@ input {
     border-radius: 0.5cap;
 }
 
+[type="radio"],[type="checkbox"]{
+    width: auto;
+    display:inline;
+}
+
+textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+}
+
+.radio {
+    margin: 0;
+}
