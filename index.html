@@ -13,8 +13,8 @@
         <fieldset>
         <legend>Personal information</legend>
         <label id="name-label" for="name">Name:</label><input id="name" type="text" placeholder="Enter your name" required>
-        <label id="email-label" for="name" for="email">Email:</label><input id="email" type="email" placeholder="Enter your email" required>
-        <label id="number-label" for="name" for="number">Age:</label><input id="number" type="number" min="13" max="130" placeholder="Enter your age">
+        <label id="email-label" for="email">Email:</label><input id="email" type="email" placeholder="Enter your email" required>
+        <label id="number-label" for="number">Age:</label><input id="number" type="number" min="13" max="130" placeholder="Enter your age">
         </fieldset>
         <fieldset>
         <legend>How satisfied are you with our service?</legend>
@@ -29,11 +29,11 @@
         </fieldset>
         <fieldset>
             <legend>How likely are you to recommend our service to others?</legend>
-            <label class="radio"><input type="radio" name="recommend"> Very Unlikely</label>
-            <label class="radio"><input type="radio" name="recommend"> Unlikely</label>
-            <label class="radio"><input type="radio" name="recommend" checked> Neutral</label>
-            <label class="radio"><input type="radio" name="recommend"> Likely</label>
-            <label class="radio"><input type="radio" name="recommend"> Very Likely</label>
+            <label class="radio"><input type="radio" name="recommend" value="-2"> Very Unlikely</label>
+            <label class="radio"><input type="radio" name="recommend" value="-1"> Unlikely</label>
+            <label class="radio"><input type="radio" name="recommend" value="0" checked> Neutral</label>
+            <label class="radio"><input type="radio" name="recommend" value="1"> Likely</label>
+            <label class="radio"><input type="radio" name="recommend" value="2"> Very Likely</label>
         </fieldset>
         <fieldset>
             <legend>How did you hear about us?</legend>
@@ -41,13 +41,12 @@
             <label class="radio"><input type="checkbox" name="about" value="2"> Radio Ad</label>
             <label class="radio"><input type="checkbox" name="about" value="3"> Social Media</label>
             <label class="radio"><input type="checkbox" name="about" value="4"> Friend/Family</label>
-            <label class="radio"><input type="checkbox" name="about"> Other</label>
+            <label class="radio"><input type="checkbox" name="about" value="5"> Other</label>
         </fieldset>
         <fieldset>
-        </fieldset>
             <legend>Any additional comments or suggestions?</legend>
             <textarea></textarea>
-        <fieldset>
+        </fieldset>
         <button type="submit" id="submit">Submit</button>
     </form>
 </body>
