@@ -12,9 +12,9 @@
     <form id="survey-form">
         <fieldset>
         <legend>Personal information</legend>
-        <label id="name-label" for="name">Name:</label><input id="name" type="text" placeholder="Enter your name" required>
-        <label id="email-label" for="email">Email:</label><input id="email" type="email" placeholder="Enter your email" required>
-        <label id="number-label" for="number">Age:</label><input id="number" type="number" min="13" max="130" placeholder="Enter your age">
+        <label id="name-label" for="name">Name:</label><input id="name" type="text"  class="input" placeholder="Enter your name">
+        <label id="email-label" for="email">Email:</label><input id="email" type="email"  class="input" placeholder="Enter your email">
+        <label id="number-label" for="number">Age:</label><input id="number" type="number"  class="input" min="13" max="130" placeholder="Enter your age">
         </fieldset>
         <fieldset>
         <legend>How satisfied are you with our service?</legend>
@@ -47,7 +47,8 @@
             <legend>Any additional comments or suggestions?</legend>
             <textarea></textarea>
         </fieldset>
-        <button type="submit" id="submit">Submit</button>
+        <button type="button" id="submit" onclick="SubmitForm()">Submit</button>
     </form>
+    <script src="script.js"></script>
 </body>
 </html>

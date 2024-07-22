@@ -25,7 +25,7 @@ fieldset {
     border: none;
 }
 
-form, input{
+form, .input{
     border: #5255a4 2px solid;
 }
 
@@ -39,7 +39,7 @@ label, input{
     opacity: 1;
 }
 
-input {
+.input {
     background-color: #a0a3f2;
     font-size: 16px;
     border-radius: 0.5cap;
