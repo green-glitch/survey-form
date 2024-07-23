@@ -1,13 +1,18 @@
 function SubmitForm(){
-    let fullname = document.getElementById("name-label").value;
-    let email = document.getElementById("email-label").value;
-    let number = document.getElementById("number-label").value;
+    let fullname = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let number = document.getElementById("number").value;
     if(fullname == "" || email == "" || number == ""){
         alert("Please fill all the fields");
     }
     else{
-        alert(fullname.value);
+        message = [
+            "# Inputs: \n\n",
+            "Name: " + fullname + "\n",
+            "Email: " + email + "\n",
+            "Age: " + number + "\n",
+        ];
+
+        alert(message.join(""));
     }
 }
-
-// TODO: Submit Button must work

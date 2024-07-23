@@ -15,7 +15,7 @@ p{
     font-style: italic;
 }
 
-form {
+#survey-form {
     background-color: #dcd3e7;
     padding: 10px;
     border-radius: 1cap;
@@ -25,7 +25,7 @@ fieldset {
     border: none;
 }
 
-form, .input{
+#survey-form, .input{
     border: #5255a4 2px solid;
 }
 

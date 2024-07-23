@@ -9,7 +9,7 @@
 <body>
     <h1 id="title">Your Feedback Matters: Survey Form</h1>
     <p id="description">Help us improve by sharing your thoughts and experiences. Please take a few moments to complete our survey.</p>
-    <form id="survey-form">
+    <div id="survey-form">
         <fieldset>
         <legend>Personal information</legend>
         <label id="name-label" for="name">Name:</label><input id="name" type="text"  class="input" placeholder="Enter your name">
@@ -47,8 +47,8 @@
             <legend>Any additional comments or suggestions?</legend>
             <textarea></textarea>
         </fieldset>
-        <button type="button" id="submit" onclick="SubmitForm()">Submit</button>
-    </form>
+        <button id="submit" onclick="SubmitForm()">Submit</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
