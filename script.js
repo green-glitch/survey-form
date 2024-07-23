@@ -1,16 +1,27 @@
+const fullname = document.getElementById("name");
+const email = document.getElementById("email");
+const number = document.getElementById("number");
+const dropdown = document.getElementById("dropdown");
+const recommend = document.getElementsByName("recommend");
+const about = document.getElementsByName("about");
+
+
 function SubmitForm(){
-    let fullname = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let number = document.getElementById("number").value;
-    if(fullname == "" || email == "" || number == ""){
+    let fn = fullname.value;
+    let em = email.value;
+    let age = number.value;
+    let drop = dropdown.value;
+
+    if(fn == "" || em == "" || age == ""){
         alert("Please fill all the fields");
     }
     else{
         message = [
             "# Inputs: \n\n",
-            "Name: " + fullname + "\n",
-            "Email: " + email + "\n",
-            "Age: " + number + "\n",
+            "Name: " + fn + "\n",
+            "Email: " + em + "\n",
+            "Age: " + age + "\n",
+            "Satisfied? " + drop + "\n",
         ];
 
         alert(message.join(""));
