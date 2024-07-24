@@ -15,7 +15,7 @@ p{
     font-style: italic;
 }
 
-form {
+#survey-form {
     background-color: #dcd3e7;
     padding: 10px;
     border-radius: 1cap;
@@ -25,7 +25,7 @@ fieldset {
     border: none;
 }
 
-form, input{
+#survey-form, .input{
     border: #5255a4 2px solid;
 }
 
@@ -39,7 +39,7 @@ label, input{
     opacity: 1;
 }
 
-input {
+.input {
     background-color: #a0a3f2;
     font-size: 16px;
     border-radius: 0.5cap;
@@ -59,4 +59,13 @@ textarea{
 
 .radio {
     margin: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    color: #5255a4;
+    font-size: 40px;
 }
