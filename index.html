@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Survey Form</title>
 </head>
 <body>
@@ -20,11 +21,11 @@
         <legend>How satisfied are you with our service?</legend>
         <select id="dropdown" name="select">
             <option value="" selected disabled>-</option>
-            <option value="Very Dissatisfied">Very Dissatisfied</option>
-            <option value="Dissatisfied">Dissatisfied</option>
-            <option value="Neutral">Neutral</option>
-            <option value="Satisfied">Satisfied</option>
-            <option value="Very Satisfied">Very Satisfied</option>
+            <option value="-2">Very Dissatisfied</option>
+            <option value="-1">Dissatisfied</option>
+            <option value="0">Neutral</option>
+            <option value="1">Satisfied</option>
+            <option value="2">Very Satisfied</option>
         </select> 
         </fieldset>
         <fieldset>
@@ -37,11 +38,11 @@
         </fieldset>
         <fieldset>
             <legend>How did you hear about us?</legend>
-            <label class="radio"><input type="checkbox" name="about" value="1"> TV Ad</label>
-            <label class="radio"><input type="checkbox" name="about" value="2"> Radio Ad</label>
-            <label class="radio"><input type="checkbox" name="about" value="4"> Social Media</label>
-            <label class="radio"><input type="checkbox" name="about" value="16"> Friend/Family</label>
-            <label class="radio"><input type="checkbox" name="about" value="32"> Other</label>
+            <label class="radio"><input type="checkbox" name="about" value="0"> TV Ad</label>
+            <label class="radio"><input type="checkbox" name="about" value="1"> Radio Ad</label>
+            <label class="radio"><input type="checkbox" name="about" value="2"> Social Media</label>
+            <label class="radio"><input type="checkbox" name="about" value="3"> Friend/Family</label>
+            <label class="radio"><input type="checkbox" name="about" value="4"> Other</label>
         </fieldset>
         <fieldset>
             <legend>Any additional comments or suggestions?</legend>
@@ -49,6 +50,9 @@
         </fieldset>
         <button id="submit" onclick="SubmitForm()">Submit</button>
     </div>
+    <footer>
+        <a href="https://github.com/green-glitch/"><i class="fa-brands fa-github"></i></a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

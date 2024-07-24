@@ -60,3 +60,12 @@ textarea{
 .radio {
     margin: 0;
 }
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    color: #5255a4;
+    font-size: 40px;
+}
