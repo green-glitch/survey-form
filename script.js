@@ -6,6 +6,14 @@ const options = document.getElementsByTagName("option");
 const recommend = document.getElementsByName("recommend");
 const about = document.getElementsByName("about");
 
+function GetRecommend(){
+    for (let i = 0; i <= 4; i++){
+        if (recommend[i].checked){
+            return recommend[i].value;
+        }
+    }
+}
+
 function SubmitForm(){
     let fn = fullname.value;
     let em = email.value;
@@ -13,7 +21,7 @@ function SubmitForm(){
     let drop = dropdown.value;
 
     if(fn == "" || em == "" || age == ""){
-        //alert("Please fill all the fields");
+        alert("Please fill all the fields");
     }
     else{
         message = [
@@ -22,9 +30,10 @@ function SubmitForm(){
             "Email: " + em + "\n",
             "Age: " + age + "\n",
             "Satisfied? " + options[parseInt(drop) + 3].innerText + "\n",
+            "Recommend: " + GetRecommend(),
         ];
 
-        // alert(message.join(""));
+        alert(message.join(""));
     }
-    alert("The form will be working soon.");
+    // alert("The form will be working soon.");
 }

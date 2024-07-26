@@ -8,13 +8,13 @@
 <body>
     <fieldset>
         <legend>How likely are you to recommend our service to others?</legend>
-        <label class="radio"><input type="radio" name="recommend" value="-2"> Very Unlikely</label>
-        <label class="radio"><input type="radio" name="recommend" value="-1"> Unlikely</label>
-        <label class="radio"><input type="radio" name="recommend" value="0" checked> Neutral</label>
-        <label class="radio"><input type="radio" name="recommend" value="1"> Likely</label>
-        <label class="radio"><input type="radio" name="recommend" value="2"> Very Likely</label>
+        <label class="radio"><input type="radio" name="recommend" value="Very Unlikely"> Very Unlikely</label>
+        <label class="radio"><input type="radio" name="recommend" value="Unlikely"> Unlikely</label>
+        <label class="radio"><input type="radio" name="recommend" value="Neutral" checked> Neutral</label>
+        <label class="radio"><input type="radio" name="recommend" value="Likely"> Likely</label>
+        <label class="radio"><input type="radio" name="recommend" value="Very Likely"> Very Likely</label>
     </fieldset>
-    <button id="submit" onclick="GetRecommend()">Submit</button>
+    <button id="submit" onclick="alert(GetRecommend())">Submit</button>
     <script src="script.js"></script>
 </body>
 </html>
