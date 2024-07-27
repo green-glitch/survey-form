@@ -5,6 +5,25 @@ const dropdown = document.getElementById("dropdown");
 const options = document.getElementsByTagName("option");
 const recommend = document.getElementsByName("recommend");
 const about = document.getElementsByName("about");
+const textarea = document.getElementsByTagName("textarea");
+
+function GetRecommend(){
+    for (let i = 0; i <= 4; i++){
+        if (recommend[i].checked){
+            return recommend[i].value;
+        }
+    }
+}
+
+function GetAbout(){
+    let arr = [];
+    for (let i = 0; i <= 4; i++){
+        if (about[i].checked){
+            arr.push(about[i].value);
+        }
+    }
+    return arr;
+}
 
 function SubmitForm(){
     let fn = fullname.value;
@@ -13,7 +32,7 @@ function SubmitForm(){
     let drop = dropdown.value;
 
     if(fn == "" || em == "" || age == ""){
-        //alert("Please fill all the fields");
+        alert("Please fill all the fields");
     }
     else{
         message = [
@@ -21,10 +40,13 @@ function SubmitForm(){
             "Name: " + fn + "\n",
             "Email: " + em + "\n",
             "Age: " + age + "\n",
-            "Satisfied? " + options[parseInt(drop) + 3].innerText + "\n",
+            "Satisfied: " + options[parseInt(drop) + 3].innerText + "\n",
+            "Recommend: " + GetRecommend() + "\n",
+            "About: " + GetAbout().join(", ") + "\n",
+            "Comments: " + textarea[0].value,
         ];
 
-        // alert(message.join(""));
+        alert(message.join(""));
     }
-    alert("The form will be working soon.");
+    // alert("The form will be working soon.");
 }
