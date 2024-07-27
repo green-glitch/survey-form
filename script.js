@@ -5,6 +5,7 @@ const dropdown = document.getElementById("dropdown");
 const options = document.getElementsByTagName("option");
 const recommend = document.getElementsByName("recommend");
 const about = document.getElementsByName("about");
+const textarea = document.getElementsByTagName("textarea");
 
 function GetRecommend(){
     for (let i = 0; i <= 4; i++){
@@ -41,7 +42,8 @@ function SubmitForm(){
             "Age: " + age + "\n",
             "Satisfied: " + options[parseInt(drop) + 3].innerText + "\n",
             "Recommend: " + GetRecommend() + "\n",
-            "About: " + GetAbout().join(", "),
+            "About: " + GetAbout().join(", ") + "\n",
+            "Comments: " + textarea[0].value,
         ];
 
         alert(message.join(""));
