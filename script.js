@@ -14,6 +14,16 @@ function GetRecommend(){
     }
 }
 
+function GetAbout(){
+    let arr = [];
+    for (let i = 0; i <= 4; i++){
+        if (about[i].checked){
+            arr.push(about[i].value);
+        }
+    }
+    return arr;
+}
+
 function SubmitForm(){
     let fn = fullname.value;
     let em = email.value;
@@ -29,8 +39,9 @@ function SubmitForm(){
             "Name: " + fn + "\n",
             "Email: " + em + "\n",
             "Age: " + age + "\n",
-            "Satisfied? " + options[parseInt(drop) + 3].innerText + "\n",
-            "Recommend: " + GetRecommend(),
+            "Satisfied: " + options[parseInt(drop) + 3].innerText + "\n",
+            "Recommend: " + GetRecommend() + "\n",
+            "About: " + GetAbout().join(", "),
         ];
 
         alert(message.join(""));
