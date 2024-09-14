@@ -22,6 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. 
 -->
 
+<!-- Survey form to collect data from users.
+This is just a page template without back-end scripts to save data from users to database.  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,15 +35,21 @@ SOFTWARE.
     <title>Survey Form</title>
 </head>
 <body>
+    <!-- Header with title and description -->
+    <header>
     <h1 id="title">Your Feedback Matters: Survey Form</h1>
     <p id="description">Help us improve by sharing your thoughts and experiences. Please take a few moments to complete our survey.</p>
-    <div id="survey-form">
+    </header>
+    <!-- Form -->
+    <main id="survey-form">
+        <!-- Name, email and age inputs -->
         <fieldset>
         <legend>Personal information</legend>
         <label id="name-label" for="name">Name:</label><input id="name" type="text"  class="input" placeholder="Enter your name">
         <label id="email-label" for="email">Email:</label><input id="email" type="email"  class="input" placeholder="Enter your email">
         <label id="number-label" for="number">Age:</label><input id="number" type="number"  class="input" min="13" max="130" placeholder="Enter your age">
         </fieldset>
+        <!-- Select input -->
         <fieldset>
         <legend>How satisfied are you with our service?</legend>
         <select id="dropdown" name="select">
@@ -52,6 +61,7 @@ SOFTWARE.
             <option value="2">Very Satisfied</option>
         </select> 
         </fieldset>
+        <!-- Radio and checkbox inputs -->
         <fieldset>
             <legend>How likely are you to recommend our service to others?</legend>
             <label class="radio"><input type="radio" name="recommend" value="Very Unlikely"> Very Unlikely</label>
@@ -68,13 +78,16 @@ SOFTWARE.
             <label class="radio"><input type="checkbox" name="about" value="Friend/Family"> Friend/Family</label>
             <label class="radio"><input type="checkbox" name="about" value="Other"> Other</label>
         </fieldset>
+        <!-- Textarea input -->
         <fieldset>
             <legend>Any additional comments or suggestions?</legend>
             <textarea></textarea>
         </fieldset>
+        <!-- Submit button -->
         <button id="submit" onclick="SubmitForm()">Submit</button>
-    </div>
+    </main>
     <footer>
+        <!-- GitHub repository link -->
         <a href="https://github.com/green-glitch/survey-form"><i class="fa-brands fa-github"></i></a>
     </footer>
     <script src="script.js"></script>
