@@ -48,5 +48,4 @@ function SubmitForm(){
 
         alert(message.join(""));
     }
-    // alert("The form will be working soon.");
 }
