@@ -14,12 +14,13 @@
     <p id="description">Help us improve by sharing your thoughts and experiences. Please take a few moments to complete our survey.</p>
     </header>
     <!-- Form -->
-    <main id="survey-form">
+    <main>
+        <form id="survey-form">
         <!-- Name, email and age inputs -->
         <fieldset>
         <legend>Personal information</legend>
-        <label id="name-label" for="name">Name:</label><input id="name" type="text"  class="input" placeholder="Enter your name">
-        <label id="email-label" for="email">Email:</label><input id="email" type="email"  class="input" placeholder="Enter your email">
+        <label id="name-label" for="name">Name:</label><input id="name" type="text"  class="input" placeholder="Enter your name" required>
+        <label id="email-label" for="email">Email:</label><input id="email" type="email"  class="input" placeholder="Enter your email" required>
         <label id="number-label" for="number">Age:</label><input id="number" type="number"  class="input" min="13" max="130" placeholder="Enter your age">
         </fieldset>
         <!-- Select input -->
@@ -58,6 +59,7 @@
         </fieldset>
         <!-- Submit button -->
         <button id="submit" onclick="SubmitForm()">Submit</button>
+    </form>
     </main>
     <footer>
         <!-- GitHub repository link -->
